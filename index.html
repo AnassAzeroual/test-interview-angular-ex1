@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 405px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        #result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Calculateur de monnaie</h2>
+
+    <p>Entrez les prix des achats (séparés par des virgules):</p>
+    <input id="prices" type="text">
+
+    <p>Entrez la somme payée:</p>
+    <input id="paid" type="text">
+
+    <button onclick="calculateChange()">Calculer la monnaie</button>
+
+    <p id="tens"></p>
+    <p id="fives"></p>
+    <p id="ones"></p>
+</div>
+
+<script src="./index.js"></script>
+
+
+</body>
+</html>
